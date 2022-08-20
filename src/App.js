@@ -9,20 +9,25 @@ import { Routes, Route, Link, Outlet } from 'react-router-dom'
 const Layout = () => {
   return (
     <>
-      <header className='header'>Header</header>
-      <nav>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
+      <header className='header'>
+        <div className='title'>Kaohsiung Tour</div>
+        <div>
+          <nav>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
 
-        <li>
-          <Link to='faq'>FAQ</Link>
-        </li>
+            <li>
+              <Link to='faq'>FAQ</Link>
+            </li>
 
-        <li>
-          <Link to='tour'>Tour</Link>
-        </li>
-      </nav>
+            <li>
+              <Link to='tour'>Tour</Link>
+            </li>
+          </nav>
+        </div>
+      </header>
+
       <div className='content'>
         <Outlet />
       </div>
