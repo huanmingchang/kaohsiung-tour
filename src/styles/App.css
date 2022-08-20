@@ -85,3 +85,26 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.tour {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.tour-list {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.wrapper li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.wrapper li:hover {
+  text-decoration: underline;
+}

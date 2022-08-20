@@ -1,5 +1,12 @@
+import { Outlet } from 'react-router-dom'
+
 const Tour = () => {
-  return <div>Tour</div>
+  return (
+    <>
+      <div className='tour'>Tour</div>
+      <Outlet />
+    </>
+  )
 }
 
 export default Tour
