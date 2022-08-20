@@ -11,21 +11,19 @@ const Layout = () => {
     <>
       <header className='header'>
         <div className='title'>Kaohsiung Tour</div>
-        <div>
-          <nav>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
+        <nav>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
 
-            <li>
-              <Link to='faq'>FAQ</Link>
-            </li>
+          <li>
+            <Link to='faq'>FAQ</Link>
+          </li>
 
-            <li>
-              <Link to='tour'>Tour</Link>
-            </li>
-          </nav>
-        </div>
+          <li>
+            <Link to='tour'>Tour</Link>
+          </li>
+        </nav>
       </header>
 
       <div className='content'>

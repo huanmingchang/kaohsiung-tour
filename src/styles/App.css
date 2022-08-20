@@ -3,3 +3,34 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  height: 2rem;
+  background: #0284c7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+nav li:hover {
+  text-decoration: underline;
+  color: #bae6fd;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+}
