@@ -4,6 +4,12 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +50,7 @@ footer {
 }
 
 .content {
+  flex: 1;
   margin: 0 auto;
   max-width: 1440px;
   padding: 1rem;

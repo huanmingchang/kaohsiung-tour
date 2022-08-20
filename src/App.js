@@ -25,7 +25,6 @@ const Layout = () => {
           </li>
         </nav>
       </header>
-
       <div className='content'>
         <Outlet />
       </div>
