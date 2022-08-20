@@ -42,3 +42,9 @@ footer {
   color: #fff;
   text-align: center;
 }
+
+.content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1rem;
+}
