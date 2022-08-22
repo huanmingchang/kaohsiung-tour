@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import Loading from './Loading'
 
 const URL =
   'https://api.kcg.gov.tw/api/service/Get/9c8e1450-e833-499c-8320-29b36b7ace5c'
@@ -24,22 +25,36 @@ const TourDetails = () => {
 
   return (
     <>
-      <main>
-        <h2 className='attraction-name'>{Name}</h2>
-        <div className='container'>
-          <input
-            className='button'
-            type='button'
-            value='
+      {data.length !== 0 ? (
+        <main>
+          <h2 className='attraction-name'>{Name}</h2>
+          <div className='container'>
+            <input
+              className='button'
+              type='button'
+              value='
       回列表'
-            onClick={() => navigate('/tour')}
-          />
-          <p className='bold'>開放時間: {Opentime}</p>
-          <p className='bold'>地址: {Add}</p>
-          <img className='attraction-img' src={Picture1} alt='' />
-          <p className='content'>{Toldescribe}</p>
-        </div>
-      </main>
+              onClick={() => navigate('/tour')}
+            />
+            <p className='bold'>開放時間: {Opentime}</p>
+            <a href=''></a>
+            <p className='bold'>
+              地址:
+              <a
+                href={`https://www.google.com/maps/search/${encodeURI(Add)}`}
+                target='_blank'
+                className='add'
+              >
+                {Add}
+              </a>
+            </p>
+            <img className='attraction-img' src={Picture1} alt='' />
+            <p className='content'>{Toldescribe}</p>
+          </div>
+        </main>
+      ) : (
+        <Loading />
+      )}
     </>
   )
 }
