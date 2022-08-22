@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kaohsiung-tour/static/css/main.68247938.css",
+    "main.js": "/kaohsiung-tour/static/js/main.0b327db6.js",
+    "static/media/logo.jpeg": "/kaohsiung-tour/static/media/logo.aa7aff1399c8400652c2.jpeg",
+    "index.html": "/kaohsiung-tour/index.html",
+    "main.68247938.css.map": "/kaohsiung-tour/static/css/main.68247938.css.map",
+    "main.0b327db6.js.map": "/kaohsiung-tour/static/js/main.0b327db6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68247938.css",
+    "static/js/main.0b327db6.js"
+  ]
+}
