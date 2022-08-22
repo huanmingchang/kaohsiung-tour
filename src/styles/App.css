@@ -52,6 +52,7 @@ footer {
 .content {
   flex: 1;
   margin: 0 auto;
+  margin-top: 3rem;
   max-width: 1440px;
   padding: 1rem;
 }
