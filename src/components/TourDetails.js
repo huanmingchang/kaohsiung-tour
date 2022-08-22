@@ -37,7 +37,17 @@ const TourDetails = () => {
               onClick={() => navigate('/tour')}
             />
             <p className='bold'>開放時間: {Opentime}</p>
-            <p className='bold'>地址: {Add}</p>
+            <a href=''></a>
+            <p className='bold'>
+              地址:
+              <a
+                href={`https://www.google.com/maps/search/${encodeURI(Add)}`}
+                target='_blank'
+                className='add'
+              >
+                {Add}
+              </a>
+            </p>
             <img className='attraction-img' src={Picture1} alt='' />
             <p className='content'>{Toldescribe}</p>
           </div>
